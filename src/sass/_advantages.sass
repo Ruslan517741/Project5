@@ -7,7 +7,7 @@
         margin-top: 60px
         display: flex
         justify-content: space-between
-    &__icon
+    &__icons
         width: 275px
         font-weight: 300
         font-size: 14px
@@ -24,4 +24,13 @@
         font-size: 18px
         text-align: center
         color: #0D0D0D
+    &__icon
+        &_animated
+            animation-name: heartbeat
+            animation-duration: 10s
+            animation-timing-function: ease
+            animation-iteration-count: 2
+            &:hover
+                animation-play-state: paused
+
     
