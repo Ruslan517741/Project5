@@ -3,22 +3,45 @@
         &__official
             display: none
     .promo
+        min-height: 580px
         padding: 0 10px
-
+    .advantages
+        padding-bottom: 30px
+        h3
+            margin-top: 35px
     .consultation
-        padding: 100px 10px 92px 10px
+        min-height: 600px
+        padding: 50px 10px 40px 10px
         &__descr
             font-size: 15px
     .carousel
+        padding: 35px
         &__inner
-            width: 600px
+            width: 530px
             img
-                width: 600px
+                width: 530px
     .catalog
+        padding-bottom: 30px
+        &__tabs
+            margin-top: 40px
+        &__tab
+            width: 170px
+            font-size: 15px
         &__content
             justify-content: space-around
     .reviews
         padding: 0 10px
+        &__img
+            margin-right: 20px
+        &__descr
+            margin-left: 190px
+        &__review
+            margin: 40px 0
+    .footer
+        &__info
+            width: 360px
+            height: 250px
+            padding: 30px 30px 30px 30px
 
     
 @media ( max-width: 575px)
@@ -51,3 +74,19 @@
             width: 170px
             font-size: 15px
 
+@media ( max-width: 360px)
+    .carousel
+        padding: 45px 0
+        &__inner
+            width: 340px
+            img
+                width: 340px
+    .catalog
+        padding-bottom: 50px
+        &__tabs
+            margin-top: 40px
+        &__tab
+            width: 100px
+            font-size: 10px
+            height: 44px
+            line-height: 40px
