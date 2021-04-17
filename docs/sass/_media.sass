@@ -3,22 +3,42 @@
         &__official
             display: none
     .promo
+        min-height: 580px
         padding: 0 10px
-
+    .advantages
+        padding-bottom: 30px
+        h3
+            margin-top: 35px
     .consultation
-        padding: 100px 10px 92px 10px
+        min-height: 600px
+        padding: 50px 10px 40px 10px
         &__descr
             font-size: 15px
     .carousel
+        padding: 35px
         &__inner
-            width: 600px
+            width: 530px
             img
-                width: 600px
+                width: 530px
     .catalog
+        padding-bottom: 30px
+        &__tabs
+            margin-top: 40px
+        &__tab
+            width: 170px
+            font-size: 15px
         &__content
             justify-content: space-around
     .reviews
-        padding: 0 10px
+        padding: 0 10px 40px 10px
+        &__wrapper
+            hr
+                margin-top: 40px
+    .footer
+        &__info
+            width: 360px
+            height: 250px
+            padding: 30px 30px 30px 30px
 
     
 @media ( max-width: 575px)
@@ -29,9 +49,12 @@
         padding: 0 10px 
 
     .consultation
-        padding: 100px 10px 92px 10px
+        padding: 50px 10px 50px 10px
         &__descr
+            margin-top: 30px
             font-size: 15px
+        .feed-form
+            margin-top: 30px
     
     .title
         font-size: 25px
@@ -40,14 +63,97 @@
     .carousel
         padding: 45px 0
         &__inner
-            width: 500px
+            width: 400px
             img
-                width: 500px
+                width: 400px
     .catalog
         padding-bottom: 50px
         &__tabs
             margin-top: 40px
         &__tab
-            width: 170px
-            font-size: 15px
+            width: 150px
+            font-size: 14px
+    .reviews
+        &__item
+            margin-left: 35px
 
+@media ( max-width: 360px)
+    .header
+        &__phone
+            font-size: 16px
+        img
+            width: 170px
+    .promo
+        min-height: 560px
+        &__header
+            font-size: 27px
+            line-height: 35px
+        &__subheader
+            margin-top: 8px
+            font-size: 15px
+            line-height: 15px
+        &__icons
+            margin-top: 50px
+            width: 340px
+        &__icon
+            img
+                margin-bottom: 10px
+    .advantages
+        &__wrapper
+            margin-top: 10px
+            flex-direction: column
+            align-items: center
+        &__item
+            margin-top: 20px
+        &__title
+            margin: 18px 0 10px 0
+    .carousel
+        padding: 45px 0
+        &__inner
+            width: 340px
+            img
+                width: 340px
+    .catalog
+        padding-bottom: 50px
+        &__tabs
+            margin-top: 40px
+        &__tab
+            width: 100px
+            font-size: 10px
+            height: 44px
+            line-height: 40px
+    .reviews
+        &__review
+            flex-direction: column
+            align-items: center
+        &__item
+            margin-top: 20px
+            margin-left: 0
+            text-align: center
+    .footer
+        &__info
+            width: 310px
+            height: 230px
+            padding: 20px 20px 20px 20px
+    .overlay
+        .modal
+            width: 350px
+            min-height: 390px
+            padding: 20px 20px 20px 20px
+        .feed-form
+            width: 300px
+            input
+                height: 45px
+                border-radius: 5px
+                margin-bottom: 5px
+                border: none
+                font-weight: 300
+                font-size: 13px
+                color: #4B4B4B
+
+                &:nth-child
+                    margin-bottom: 5px
+            &_mt25
+                margin-top: 20px
+        label.error
+            margin-bottom: 5px
